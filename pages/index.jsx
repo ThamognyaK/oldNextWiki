@@ -3,6 +3,7 @@ import Image from "next/image";
 import MastHead from "../components/MastHead";
 import BackgroundVideo from "../components/promo";
 import Pls from "../components/whateverthisis";
+import Bgimage from "../components/plshelp";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <BackgroundVideo />
 
       <Pls />
+
+      <Bgimage />
     </div>
   );
 }
