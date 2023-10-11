@@ -1,27 +1,42 @@
+# image: node:18
+
+# before_script:
+#   - npm install 
+
+# cache:
+#       paths:
+#         - node_modules/
+#         - .next/cache/
+
+# pages:
+#   before_script:
+#     - npm run build
+    
+#   script:
+#     - npm run export
+#     - rm -rf public/*
+#     - mv out/* public
+#   after_script:
+#     - rm -rf out
+#     - ls
+#   artifacts:
+#     paths:
+#       - public
+#   only:
+#     - main
 image: node:18
 
-before_script:
-  - npm install 
-
-cache:
-      paths:
-        - node_modules/
-        - .next/cache/
-
 pages:
-  before_script:
-    - npm run build
-    
+  stage: build
   script:
-    - npm run export
-    - rm -rf public/*
-    - mv out/* public
-  after_script:
-    - rm -rf out
-    - ls
+  - npm ci
+  - npm run build
+  - rm -rf public
+  - mv out public
   artifacts:
     paths:
-      - public
+    - public
   only:
-    - main
+  - main
+
 
