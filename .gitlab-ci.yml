@@ -1,25 +1,38 @@
-image: node
+# image: node
 
-before_script:
-  - npm install next
+# before_script:
+#   - npm install 
 
-cache:
-  paths:
-    - node_modules/
-    - .next/cache/
+
+# pages:
+#   before_script:
+#     - npm run build
+#     cache:
+#       paths:
+#         - node_modules/
+#         - .next/cache/
+#   script:
+#     - npm run export
+#     - rm -rf public/*
+#     - mv out/* public
+#   after_script:
+#     - rm -rf out
+#     - ls
+#   artifacts:
+#     paths:
+#       - public
+#   only:
+#     - main
+image: node:14
 
 pages:
-  before_script:
-    - npm run build
   script:
-    - npm run export
-    - rm -rf public/*
-    - mv out/* public
-  after_script:
-    - rm -rf out
-    - ls
+    - yarn install # Install dependencies
+    - yarn build # Build your Next.js site
+    - mkdir .public # Create a directory for GitLab Pages
+    - cp -r out/* .public/ # Copy the build output to the Pages directory
   artifacts:
     paths:
-      - public
+      - .public # Define the artifacts path
   only:
-    - main
+    - main # Set your branch to deploy (change as needed)
