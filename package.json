@@ -1,16 +1,33 @@
 {
+  "name": "austin-utexas",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "aos": "^2.3.4",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.6.1",
+    "front-matter": "^4.0.2",
     "next": "13.4.19",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
+    "typescript": "5.2.2"
   },
-  "engines": {
-    "node": ">=6.9.0"
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-animated": "^1.0.1"
   }
 }
