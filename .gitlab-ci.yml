@@ -8,14 +8,14 @@ cache:
 pages:
   before_script:
     - npm install
-    - npm run build
-    - npm run export
   script:
     # - rm -rf public/*
     # - mv out/* public
+    - npm run build
+    - npm run export
   after_script:
     # - rm -rf out
-    - ls -lah
+    - ls
   artifacts:
     paths:
       - public
