@@ -1,6 +1,6 @@
 import {useRef} from 'react';
 
-function DesignPage() {
+export default function DesignPage() {
 
     const wideTitleScreenUrl = "https://static.igem.wiki/teams/4629/wiki/titlescreens/design.png";
     const narrowTitleScreenUrl = "https://static.igem.wiki/teams/4629/wiki/titlescreens/phone/labtitletext.png";
@@ -30,7 +30,7 @@ function DesignPage() {
                         Plasmid Design
                     </button>
                     <button class="contentsButton" onClick={() => handleClick("header4")}>
-                        References
+                        Bibliography
                     </button>
                 </div>
                 
@@ -45,7 +45,7 @@ function DesignPage() {
 
                     <h2>Plant and Gene Selection</h2>
                         <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;DzGCL was selected as the ideal candidate GCL protein for relocalization due to its remarkable attributes observed in <i>D. zibethinus </i>. This unique plant species displays significantly elevated levels of glutathione (GSH)<sup>[1]</sup> in its ripe fruit pulp much higher than that in other plants<sup>[2]</sup>. This distinct characteristic suggests the DzGCL as a candidate enzyme with possibly high activity. GCL serves as the rate limiting enzyme in the production of GSH, the primary antioxidant. 
+                            &nbsp;&nbsp;&nbsp;&nbsp;DzGCL was selected as the ideal candidate GCL protein for relocalization due to its remarkable attributes observed in <i>D. zibethinus</i>. This unique plant species displays significantly elevated levels of glutathione (GSH)<sup>[1]</sup> in its ripe fruit pulp much higher than that in other plants<sup>[2]</sup>. This distinct characteristic suggests the DzGCL as a candidate enzyme with possibly high activity. GCL serves as the rate limiting enzyme in the production of GSH, the primary antioxidant. 
 
                             <br/>
 
@@ -138,7 +138,7 @@ function DesignPage() {
 
                     </p>
 
-            <h2 id="header4">References</h2>
+            <h2 id="header4">Bibliography</h2>
                 <ol class="references">
                     <li>
                         Singcha P, Khaksar G, Sirijan M, Sirikantaramas S. Durian (<i>Durio zibethinus</i> L.) fruit: A superior dietary source of natural glutathione and Γ-Glutamylcysteine. SSRN. September 9, 2023. Accessed September 14, 2023. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4566631. 
@@ -183,4 +183,3 @@ function DesignPage() {
    
   );
 }
-export default DesignPage;

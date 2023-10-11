@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: "LGC light";
@@ -129,6 +132,7 @@ nav.nav{
 
 .ddItem{
   border-radius: 10px;
+  line-height: 18px;
 }
 
 /* hamburger bar button*/
@@ -1437,4 +1441,20 @@ nav.nav{
   color: grey;
   margin-bottom: 15px;
 }
+
+.pdf{
+  width: 760px;
+  height: 1000px;
+}
+
+
+@media screen and(max-width: 760px) {
+ 
+ .pdf{
+  width: 5%;
+
+ } 
+  
+}
+
 

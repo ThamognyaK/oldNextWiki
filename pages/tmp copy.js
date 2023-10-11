@@ -49,8 +49,9 @@ export default function App() {
                     </button>
                 </div>
                 
+            {/* ====================CODE FOR SIDE BAR ENDS=============================== */}
+            {/* ====================CODE FOR TEXT STARTS=============================== */}
 
-                
             </div>
             <div style={{paddingTop:"60px"}}class="text">
 

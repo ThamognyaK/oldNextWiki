@@ -233,35 +233,8 @@ function MembersPage({ children }) {
                 <img class="memberImg" src="https://static.igem.wiki/teams/4629/wiki/members-page/member-images/19-aiko.png"/>
             </div>
 
-            {/* FORTUNE*/}
-            <div class="leftRow memberCard"> 
-            <img class="memberImg" src="https://static.igem.wiki/teams/4629/wiki/members-page/member-images/20-fortune.png"/> 
-                <div class="leftCol">
-                  <h1 class="memberName">Vattikorn (Fortune) Kunkongkaphan</h1>
-                  <div class="leaderBlockColor">
-                    <h2 class="memberPositions">Design and Collaborations Member</h2>
-                  </div>
-                  <p class =" memberText">
-                  Hey, I&apos;m Fortune, currently a senior at Ruamrudee International School. I am a member of the Design and the Collaboration team. I believe synthetic biology is a great means through which scientists can create meaningful change in the world.            
-                  </p>
-                </div>
-            </div> 
-            
-            {/* VIEW */}
-            <div class="rightRow memberCard">  
-                <div class="rightCol">
-                  <h1 class="memberName">Wariya (View) Turongkinanon</h1>
-                  <div class="leaderBlockColor">
-                    <h2 class="memberPositions">Design Member</h2>
-                  </div>
-                  <p class =" memberText">
-                  Hi! I&apos;m View and I&apos;m currently a junior at Ruamrudee International School. This is my first year in the iGEM team as a member of the Design, working on design aspects of the team and collaborating with the Wiki team. Design has been my passion since I was young and I&apos;m delighted to be contributing to this design process. Lastly, I&apos;m looking forward to seeing our team presenting our project at the Jamboree this year!               
-                  </p>
-                </div>
-                <img class="memberImg" src="https://static.igem.wiki/teams/4629/wiki/members-page/member-images/21-view.png"/>
-            </div> 
-            {/* ACHI */}
-            <div class="leftRow memberCard">  
+                {/* ACHI */}
+                <div class="leftRow memberCard">  
                   <img class="memberImg" src="https://static.igem.wiki/teams/4629/wiki/members-page/member-images/23-achi.png"/>
                   <div class="leftCol">
                     <h1 class="memberName">Kitrawipong (Achi) Pongwilai</h1>
@@ -279,7 +252,7 @@ function MembersPage({ children }) {
                 <div class="rightCol">
                   <h1 class="memberName">Kritpaul (Ray) Prasattongosoth</h1>
                   <div class="leaderBlockColor">
-                    <h2 class="memberPositions">Collaborations Member, Wet Lab Member</h2>
+                    <h2 class="memberPositions">Collaborations and Wet Lab Member</h2>
                   </div>
                   <p class =" memberText">
                   Hey! I&apos;m Ray and I am part of the wet lab team as well as the collaborations team of Thailand-RIS IGEM. I have learned lots of new skills and experiences working with my peers this year and our project has really hit the spot in my interests in biology. I look forward to going to the jamboree this year!
@@ -328,6 +301,34 @@ function MembersPage({ children }) {
                   </div>
                   <p class =" memberText">
                   Hey all! I&apos;m Tun and I&apos;m a part of Wet Lab and Human Practices. Although I wouldn&apos;t be able to make it to this year&apos;s jamboree, I am very grateful that I have been able to work alongside my peers which I really enjoyed doing and hopefully we could bring back some silverware this year!               
+                  </p>
+                </div>
+            </div> 
+            
+            {/* VIEW */}
+            <div class="rightRow memberCard">  
+                <div class="rightCol">
+                  <h1 class="memberName">Wariya (View) Turongkinanon</h1>
+                  <div class="leaderBlockColor">
+                    <h2 class="memberPositions">Design Member</h2>
+                  </div>
+                  <p class =" memberText">
+                  Hi! I&apos;m View and I&apos;m currently a junior at Ruamrudee International School. This is my first year in the iGEM team as a member of the Design, working on design aspects of the team and collaborating with the Wiki team. Design has been my passion since I was young and I&apos;m delighted to be contributing to this design process. Lastly, I&apos;m looking forward to seeing our team presenting our project at the Jamboree this year!               
+                  </p>
+                </div>
+                <img class="memberImg" src="https://static.igem.wiki/teams/4629/wiki/members-page/member-images/21-view.png"/>
+            </div> 
+        
+            {/* FORTUNE*/}
+            <div class="leftRow memberCard"> 
+            <img class="memberImg" src="https://static.igem.wiki/teams/4629/wiki/members-page/member-images/20-fortune.png"/> 
+                <div class="leftCol">
+                  <h1 class="memberName">Vattikorn (Fortune) Kunkongkaphan</h1>
+                  <div class="leaderBlockColor">
+                    <h2 class="memberPositions">Design and Collaborations Member</h2>
+                  </div>
+                  <p class =" memberText">
+                  Hey, I&apos;m Fortune, currently a senior at Ruamrudee International School. I am a member of the Design and the Collaboration team. I believe synthetic biology is a great means through which scientists can create meaningful change in the world.            
                   </p>
                 </div>
             </div> 
@@ -446,7 +447,7 @@ function MembersPage({ children }) {
                 <div class="leftCol">
                   <h1 class="memberName">Dr. Gholamreza (Chris) Khaksar</h1>
                   <div class="leaderBlockColor">
-                    <h2 class="advisorPositions">Lead Dry Lab Advisor</h2>
+                    <h2 class="advisorPositions">Dry Lab Advisor</h2>
                   </div>
                   <p class =" memberText">
                   Dr. Gholamreza Khaksar, referred to as “Chris”, is a senior post-doctoral fellow at the Department of Biochemistry, Faculty of Science, Chulalongkorn University. He received his BSc in Fishery engineering from Gorgan University of Agricultural Sciences, Iran in 2007. Then, he pursued his graduate study and obtained his PhD in Biotechnology (international program) from King Mongkut&apos;s University of Technology Thonburi (KMUTT), Thailand in 2018. Since then, he has been working as a postdoctoral fellow. His research interests engage in applying multi-omics approaches (genomes, transcriptomes, metabolomes, hormonome, and interactome) to gain a better understanding of the molecular mechanism underlying post-harvest ripening of climacteric fruit and plant-bacteria interactions for enhancing biotic/abiotic stress tolerance. Team Thailand-RIS is extremely thankful for his assistance, which has been instrumental to the dry lab portion of our project.               
