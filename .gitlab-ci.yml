@@ -10,9 +10,8 @@ pages:
     - npm install
     - npm run build
   script:
-    - npm run export
-    - rm -rf public/*
-    - mv out/* public
+    - npm run build
+    - ls -lah
   after_script:
     - rm -rf out
     - ls -lah public/
