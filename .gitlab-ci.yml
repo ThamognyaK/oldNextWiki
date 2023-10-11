@@ -12,7 +12,7 @@ pages:
     # - rm -rf public/*
     # - mv out/* public
     # - npm run build
-    - npm run export
+    - npm run build && next export
   after_script:
     # - rm -rf out
     - ls
