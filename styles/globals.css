@@ -1328,10 +1328,10 @@ nav.nav{
 
 /* contentsBar */
 .contentsBar{
-  height: 400vh;
-  width: 280px;
+  height: inherit;
+  width: 300px;
   padding-left: 20px;
-  padding-top: 400px;
+  padding-top: 200px;
   background-color:#FDC550;
 
   /* box-shadow: 5px 1px 0px rgba(1,1,1,0.2); */
@@ -1344,7 +1344,7 @@ nav.nav{
   text-align: left;
   padding-left: 20px;
   margin-bottom: 20px;
-  width: 220px;
+  width: 260px;
 }
 .contentsButton:hover{
   background-color: #f37b3e;
@@ -1353,7 +1353,6 @@ nav.nav{
   padding: 6px;
 }
 .text{
-
   z-index: -1;
   max-width: 760px;
   text-align: justify;
@@ -1364,6 +1363,7 @@ nav.nav{
 .text h1{
   margin-top: 50px;
   margin-bottom: 10px;
+  text-align: left;
 }
 .text h2,h3{
   margin-top: 20px;
