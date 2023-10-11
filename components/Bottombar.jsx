@@ -1,5 +1,7 @@
 import React from "react";
 
+import "tailwindcss/tailwind.css";
+
 function Footer() {
   return (
     <footer className="bg-what text-white p-6">
