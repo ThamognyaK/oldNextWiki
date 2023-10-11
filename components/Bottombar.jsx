@@ -2,53 +2,53 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="sponsor-section">
+    <footer className="bg-what text-white p-6">
+      <div className="flex flex-wrap justify-center space-x-6 mb-6">
         {/* Sponsor images go here */}
         <img
           src="https://static.igem.wiki/teams/4629/wiki/chulalongkorn-university-official-logo-svg.png"
-          className="sponsor-image"
+          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          alt="Sponsor"
         />
         <img
           src="https://static.igem.wiki/teams/4629/wiki/bangchak.png"
-          className="sponsor-image"
+          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          alt="Sponsor"
         />
         <img
           src="https://static.igem.wiki/teams/4629/wiki/logo-mahachok-fruits-01.png"
-          className="sponsor-image"
+          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          alt="Sponsor"
         />
-
         <img
           src="https://static.igem.wiki/teams/4629/wiki/ris.png"
-          className="sponsor-image"
+          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          alt="Sponsor"
         />
-
         {/* Add more sponsor images as needed */}
       </div>
-      <div className="cc-license">
+      <div className="text-center">
         {/* Creative Commons license information */}
-
-        <p class="mb-0">
-          <small>
-            &copy; 2023 - Content on this site is licensed under a{" "}
-            <a
-              class="subfoot"
-              href="https://creativecommons.org/licenses/by/4.0/"
-              rel="license"
-            >
-              Creative Commons Attribution 4.0 International license
-            </a>
-            .
-          </small>
+        <p className="mb-0 text-white text-sm sm:text-base">
+          &copy; 2023 - Content on this site is licensed under a{" "}
+          <a
+            className="text-faded-underline underline"
+            href="https://creativecommons.org/licenses/by/4.0/"
+            rel="license"
+          >
+            Creative Commons Attribution 4.0 International license
+          </a>
+          .
         </p>
-        <p>
-          <small>
-            The repository used to create this website is available at{" "}
-            <a href="https://gitlab.igem.org/2023/thailand-ris">
-              gitlab.igem.org/2023/thailand-ris
-            </a>
-            .
-          </small>
+        <p className="text-white text-sm sm:text-base">
+          The repository used to create this website is available at{" "}
+          <a
+            className="text-faded-underline underline"
+            href="https://gitlab.igem.org/2023/thailand-ris"
+          >
+            gitlab.igem.org/2023/thailand-ris
+          </a>
+          .
         </p>
       </div>
     </footer>

@@ -1,21 +1,23 @@
 export default function MastHead() {
   return (
-    <div class="masthead">
+    <div className="masthead">
       <video
         autoPlay
         loop
         muted
         playsInline
-        class="absolute w-full min-h-screen object-cover"
+        className="absolute w-full min-h-screen object-cover"
       >
         <source src="/thailand-ris/Titleanimation.mp4" />
       </video>
-      <div className="text-container absolute w-full text-center bottom-20">
-        <p className="text-white text-6xl">Thailand-RIS</p>
-        <p className="text-white text-4xl">Powering up Plant Defenses</p>
-        <p className="text-white text-xl">
-          Modifying GCL localization to boost plant stress response rates
-          through improved ROS mitigation.
+      <div className="text-container absolute w-full text-center bottom-20 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)]">
+        <p className="text-white text-4xl sm:text-6xl">Thailand-RIS</p>
+        <p className="text-white text-3xl sm:text-4xl">
+          Powering up Plant Defenses
+        </p>
+        <p className="text-white text-lg sm:text-xl">
+          Modifying glutamate-cysteine ligase localization to boost plant stress
+          response rates through improved reactive oxygen species mitigation.
         </p>
       </div>
     </div>
