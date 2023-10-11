@@ -9,12 +9,13 @@ pages:
   before_script:
     - npm install
     - npm run build
+    - npm run export
   script:
-    - npm run build
-    - ls -lah
+    # - rm -rf public/*
+    # - mv out/* public
   after_script:
-    - rm -rf out
-    - ls -lah public/
+    # - rm -rf out
+    - ls -lah
   artifacts:
     paths:
       - public
