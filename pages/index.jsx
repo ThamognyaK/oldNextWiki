@@ -1,35 +1,68 @@
 import Image from "next/image";
 import React from "react";
 
-import "tailwindcss/tailwind.css";
+import useTailwindLayout from "../components/pls";
+
+// import '../styles/index.module.css';
+
+// function MastHead() {
+//     return (
+//       <div class="masthead">
+//         <video
+//           autoplay
+//           loop
+//           muted
+//           playsinline
+//           class="absolute w-full min-h-screen object-cover video-bg"
+//         >
+//           <source src="/thailand-ris/Titleanimation.mp4" />
+//         </video>
+//         <div class="text-container absolute w-full text-center bottom-20 drop-shadow">
+//           <p class="text-white text-heading">Thailand-RIS</p>
+//           <p class="text-white text-subheading">Powering up Plant Defenses</p>
+//           <p class="text-white text-description">
+//             Modifying glutamate-cysteine ligase localization to boost plant stress
+//             response rates through improved reactive oxygen species mitigation.
+//           </p>
+//         </div>
+//       </div>
+//     );
+//   }
 
 function MastHead() {
+  useTailwindLayout();
+
   return (
-    <div className="masthead">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute w-full min-h-screen object-cover"
-      >
-        <source src="/thailand-ris/Titleanimation.mp4" />
-      </video>
-      <div className="text-container absolute w-full text-center bottom-20 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)]">
-        <p className="text-white text-4xl sm:text-6xl">Thailand-RIS</p>
-        <p className="text-white text-3xl sm:text-4xl">
-          Powering up Plant Defenses
-        </p>
-        <p className="text-white text-lg sm:text-xl">
-          Modifying glutamate-cysteine ligase localization to boost plant stress
-          response rates through improved reactive oxygen species mitigation.
-        </p>
+    <div>
+      <div className="masthead">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full min-h-screen object-cover"
+        >
+          <source src="/thailand-ris/Titleanimation.mp4" />
+        </video>
+        <div className="text-container absolute w-full text-center bottom-20 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)]">
+          <p className="text-white text-4xl sm:text-6xl">Thailand-RIS</p>
+          <p className="text-white text-3xl sm:text-4xl">
+            Powering up Plant Defenses
+          </p>
+          <p className="text-white text-lg sm:text-xl">
+            Modifying glutamate-cysteine ligase localization to boost plant
+            stress response rates through improved reactive oxygen species
+            mitigation.
+          </p>
+        </div>
       </div>
     </div>
   );
 }
 
 const BackgroundVideo = () => {
+  useTailwindLayout();
+
   return (
     <div className="relative min-h-screen">
       <div
@@ -57,6 +90,8 @@ const BackgroundVideo = () => {
 };
 
 const Pls = () => {
+  useTailwindLayout();
+
   return (
     <div className="relative min-h-screen">
       <div
@@ -91,6 +126,8 @@ const Pls = () => {
 };
 
 const Bgimage = () => {
+  useTailwindLayout();
+
   return (
     <div className="relative min-h-screen">
       <div
@@ -121,6 +158,8 @@ const Bgimage = () => {
 };
 
 export default function Home() {
+  useTailwindLayout();
+
   return (
     <div className="min-h-screen">
       <MastHead />

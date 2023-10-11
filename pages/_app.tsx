@@ -19,7 +19,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           href="https://static.igem.wiki/teams/4629/wiki/favicon6.png"
         />
       </Head>
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
       <Component {...pageProps} />
       <Bottombar />
     </>

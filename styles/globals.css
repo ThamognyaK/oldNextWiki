@@ -1,3 +1,9 @@
+.tailwind-layout {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+}
+
 @font-face {
   font-family: "LGC light";
   src: url("../assets/louis-george-cafe-light.ttf");
@@ -1443,4 +1449,3 @@ h3 {
 * {
   scroll-margin-top: 80px; /* whatever is a nice number that gets you past the header */
 }
-
