@@ -28,6 +28,12 @@ image: node:18
 
 pages:
   stage: build
+  before_script:
+  - npm run build
+  cache:
+    paths:
+    - node_modules/
+    - .next/cache/
   script:
   - npm ci
   - npm run build
