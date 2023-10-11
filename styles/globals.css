@@ -198,6 +198,7 @@ nav.nav {
   position: relative;
   left: 40%;
   top: 0%;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 900px) {

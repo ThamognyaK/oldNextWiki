@@ -10,6 +10,14 @@ export default function MastHead() {
       >
         <source src="/thailand-ris/Titleanimation.mp4" />
       </video>
+      <div className="text-container absolute w-full text-center bottom-20">
+        <p className="text-white text-6xl">Thailand-RIS</p>
+        <p className="text-white text-4xl">Powering up Plant Defenses</p>
+        <p className="text-white text-xl">
+          Modifying GCL localization to boost plant stress response rates
+          through improved ROS mitigation.
+        </p>
+      </div>
     </div>
   );
 }
