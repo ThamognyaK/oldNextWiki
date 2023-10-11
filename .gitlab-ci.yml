@@ -29,7 +29,7 @@ image: node:18
 pages:
   stage: build
   before_script:
-  - npm run build
+  - npm install
   cache:
     paths:
     - node_modules/
