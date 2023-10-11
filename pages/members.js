@@ -416,7 +416,7 @@ function MembersPage({ children }) {
                 <div class="leftCol">
                   <h1 class="memberName">Kittiya (Gift) Tantisuwanichkul</h1>
                   <div class="leaderBlockColor">
-                    <h2 class="advisorPositions">Lead Wet Lab Adivsor, Dry Lab Advisor</h2>
+                    <h2 class="advisorPositions">Lead Wet Lab Advisor, Dry Lab Advisor</h2>
                   </div>
                   <p class =" memberText">
                   Miss Kittiya Tantisuwanichkul, referred to as “Gift”, received her bachelor&apos;s degree in Biochemistry and Sciences from Chulalongkorn University, and is currently a PhD student in Biochemistry and Sciences at Chulalongkorn University. Something she really enjoys about conducting research is that research helps her understand things that she is interested in, and understand why things are the way that they are. Her passion in research is what motivated her to continue her studies as a PhD student. Team Thailand-RIS is immensely grateful for the colossal amount of support we have received from Miss Gift and her team.

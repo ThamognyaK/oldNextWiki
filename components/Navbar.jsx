@@ -7,7 +7,6 @@ const MENU_LIST = [
   { 
     text: "Team",
     externalRoot: "displayNone",
-    homeBtn: "displayNone",
     dd: "dropdown-content", 
     mainButton: "dropdownbtn", 
     rootButton: "displayNone", 
@@ -20,7 +19,6 @@ const MENU_LIST = [
   { 
     text: "Project",
     externalRoot: "displayNone",
-    homeBtn: "displayNone",
     dd: "dropdown-content", 
     mainButton: "dropdownbtn", 
     rootButton: "displayNone", 
@@ -33,7 +31,6 @@ const MENU_LIST = [
   { 
     text: "Human Practices",
     externalRoot: "displayNone",
-    homeBtn: "displayNone",
     dd: "dropdown-content", 
     mainButton: "dropdownbtn", 
     rootButton: "displayNone", 
@@ -46,7 +43,6 @@ const MENU_LIST = [
   { 
     text: "Judging Form",
     externalRoot: "",
-    homeBtn: "displayNone",
     dd: "displayNone", 
     mainButton: "displayNone", 
     rootButton: "displayNone", 
@@ -71,8 +67,8 @@ const Navbar = () => {
   return (
     <header>
       <nav className={`nav`}>
-        <Link href={"/"} >
-          <img class="logo" src="https://static.igem.wiki/teams/4629/wiki/teamlogo.png" alt="TRIS logo" style={{height:"40px"}}/>
+        <Link className={`logoLink`} href={"/"} >
+          <img src="https://static.igem.wiki/teams/4629/wiki/teamlogo.png" alt="TRIS logo" height={"40px"}/>
         </Link>
 
         <div
