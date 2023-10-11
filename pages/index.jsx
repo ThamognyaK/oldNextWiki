@@ -31,7 +31,6 @@ function MastHead() {
 const BackgroundVideo = () => {
   return (
     <div className="relative min-h-screen">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
@@ -40,7 +39,6 @@ const BackgroundVideo = () => {
         }}
       ></div>
 
-      {/* Video Overlay */}
       <div className="absolute inset-0 flex items-center justify-center z-100">
         <video
           className="w-3/4 h-auto rounded-[5%]"
@@ -94,7 +92,6 @@ const Pls = () => {
 const Bgimage = () => {
   return (
     <div className="relative min-h-screen">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
@@ -122,17 +119,12 @@ const Bgimage = () => {
   );
 };
 
-// pls.js
-
 export default function Home() {
   return (
     <div className="min-h-screen">
       <MastHead />
-
       <BackgroundVideo />
-
       <Pls />
-
       <Bgimage />
     </div>
   );
