@@ -1,6 +1,7 @@
 import Image from "next/image";
-
 import React from "react";
+
+import "tailwindcss/tailwind.css";
 
 function MastHead() {
   return (
