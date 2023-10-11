@@ -1,5 +1,8 @@
 image: node
 
+before_script:
+  - npm install
+
 cache:
   paths:
     - node_modules/
@@ -7,16 +10,14 @@ cache:
 
 pages:
   before_script:
-    - npm install
+    - npm run build
   script:
-    # - rm -rf public/*
-    # - mv out/* public
-    # - npm run build
-    - npm run build && next export
+    - npm run export
+    - rm -rf public/*
+    - mv out/* public
   after_script:
-    # - rm -rf out
+    - rm -rf out
     - ls
-    - ls out/
   artifacts:
     paths:
       - public

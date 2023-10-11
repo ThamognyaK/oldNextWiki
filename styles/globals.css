@@ -3,7 +3,10 @@
   src: url("../assets/Druk-Wide.ttf");
 }
 
-
+@font-face {
+  font-family: "rockabye";
+  src: url("../assets/Rockabye-Regular.ttf");
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
 * {
@@ -17,7 +20,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 header {
   position: fixed;
   top: 0;
@@ -32,16 +34,14 @@ header {
 nav {
   display: flex;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 24px;
+  padding: 18px 24px;
   justify-content: space-between;
-  background-color: #F07B3E;
-  /* rgb(228, 130, 11); */
-  box-shadow:  5px 0px 5px grey;
-  color: whitesmoke; 
+  background-color: white;
+  color: rgb(48, 63, 123);
+  box-shadow: 2px 0px 8px rgb(112, 112, 112);
 }
 
 p {
@@ -49,100 +49,17 @@ p {
   line-height: 28px;
   color: grey;
 }
-
-.dropdownItem{
-  font-size: 14px;
-  font-weight: 200;
-  position: relative;
-  transition: all 0.2s;
-  color: white;
-  z-index: 1;
-}
-nav.nav{
-  z-index: 1;
-  height: 60px;
-}
-
-/* dropdwon */
-.wide{
-  display: none;
-}
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 8px 16px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  border-radius: 10px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-bottom: 5px solid rgb(228, 130, 11);
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: orange;
-}
-
-.displayNone{
-  display: none;
-}
-
-.ddItem{
-  border-radius: 10px;
-}
-
-/* hamburger bar button*/
 .nav__menu-bar {
   display: flex;
   flex-direction: column;
   row-gap: 6px;
   cursor: pointer;
-  position: relative;
-  top: 20%;
-  max-height: 24px;
 }
-
-
 .nav__menu-bar div {
   width: 40px;
   height: 4px;
-  background-color: white;
-  border-radius: 1px;
- 
+  background-color: rgb(48, 63, 123);
+  border-radius: 0px;
 }
 .nav__menu-list {
   z-index: 2;
@@ -153,47 +70,41 @@ nav.nav{
   width: 288px;
   row-gap: 24px;
   right: -288px;
-  padding: 12px 16px;
+  padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color:#F07b3e;
+  background-color: white;
 }
 .nav__menu-list.active {
   right: 0;
 }
 .nav__link {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
   transition: all 0.2s;
-  color: white;
-  
+  color: rgb(48, 63, 123);
+}
+
+.center {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.logo{
-  cursor: pointer;
-  position: relative;
-  left: 40%;
-  top: 0%;
+.center1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-
-
-
-@media screen and (min-width: 900px) {
-  .dropdown{
-    display: inline !important;
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    font-family: "druk";
   }
-  
   nav {
-    padding: 0px 20px;
-  }
-  .logo{
-    position: relative;
-    left: 0%;
-    top: 18%;
-    margin-left: 10px;
+    padding: 0px;
   }
   .indented {
     margin: auto;
@@ -203,7 +114,9 @@ nav.nav{
     margin: auto;
     width: 1000px;
   }
- 
+  .logo {
+    display: none;
+  }
   .nav__menu-bar {
     display: none;
   }
@@ -216,40 +129,22 @@ nav.nav{
     align-items: flex-start;
     justify-content: space-around;
   }
-
-  /* .nav__link::before {
+  .nav__link::before {
     content: "";
     position: absolute;
     width: 0%;
     height: 6px;
-    bottom: -8px;
+    bottom: -16px;
     left: 0;
-    background-color: white;
+    background-color: rgb(48, 63, 123);
     transition: all 0.2s;
   }
 
   .nav__link:hover:before {
     width: 100%;
-  } */
-
-  /* .nav__link::before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 6px;
-    bottom: -8px;
-    left: 0;
-    background-color: white;
-    transition: all 0.2s;
   }
-
-  .nav__link:hover:before {
-    width: 100%;
-  } */
 }
 
-
-/*
 .titleScreen {
   align-items: center;
   align-content: center;
@@ -270,12 +165,9 @@ nav.nav{
   align-items: center;
   justify-content: center;
   padding-top: 70px;
-  height: 100vh;
-  background-image: url("https://static.igem.wiki/teams/4629/wiki/titlescreens/team-heading.png");
-}
-.titleImg {
-  width: 100vw;
-  top:0%;
+  height: 50vh;
+  background-image: url("https://static.igem.wiki/teams/4314/wiki/gradient.svg");
+  background: linear-gradient(to right bottom, rgb(63, 81, 181), white);
 }
 .title {
   text-align: center;
@@ -648,11 +540,6 @@ nav.nav{
 }
 
 @media screen and (max-width: 1100px) {
-  .titleImg {
-    width: 100vw;
-    position:absolute;
-    top:0%;
-  }
   .description {
     width: 90vw;
   }
@@ -784,7 +671,7 @@ nav.nav{
     display: none;
   }
   .titleScreen1 {
-    height: 60vh;
+    height: 30vh;
   }
 }
 
@@ -1045,363 +932,6 @@ nav.nav{
   .narrowScreen{
     display: show;
   }
-} */
-
-/* members page */
-.memberImg{
-  width: 400px;
-  height: 400px;
-}
-.memberName{
-  padding-top: 50px;
-}
-.leaderPositions{
-  color: white;
-  background-color: #4AA198;
-  padding: 10px;
-  width: fit-content;
-  border-radius: 5px;
-}
-.memberPositions{
-  color: white;
-  background-color: #FBBB0B;
-  padding: 10px;
-  width: fit-content;
-  border-radius: 5px;
-}
-.advisorPositions{
-  color: white;
-  background-color:#DB7952;
-  padding: 10px;
-  width: fit-content;
-  border-radius: 5px;
-}
-.memberText{
-  width: 600px;
-  height: 220px;
-  overflow-y: scroll;
-}
-.membersHeading{
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  font-size: 46px;
 }
 
-@media screen and (max-width: 1100px){
-  .memberName{
-    width: 400px;
-  }
-  .memberText{
-    width: 400px;
-    height: 180px;
-  }
-  .memberPositions{
-    max-width: 400px;
-  }
-  .leaderPositions{
-    max-width: 400px;
-  }
-  .advisorPositions{
-    max-width: 400px;
-  }
-}
-@media screen and (max-width: 900px){
-  .membersWide{
-    display: none;
-  }
-  .memberImg{
-    width: 250px;
-    height: 250px;
-    align-self: center;
-  }
-  .membersNarrow{
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-  }
-  .advisorPositions{
-    text-align: center;
-    align-self: center;
-  }
-
-  
-  
-}
-@media screen and (min-width: 901px){
-  .membersNarrow{
-    display: none;
-    justify-items: center;
-  }
-}
-
-
-/* page set ups */
-
-.sidePadded50{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.leftRow{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-}
-.rightRow{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-
-.leftCol{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.rightCol{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  text-align: right;
-}
-.column{
-  display: flex;
-  flex-direction: column;
-}
-.row{
-  display: flex;
-  flex-direction: row;
-}
-.yBox60{
-  height: 60px;
-}
-.yBox100{
-  height: 100px;
-}
-
-/* dropdwon */
-.wide{
-  display: none;
-}
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 8px 10px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  border-radius: 10px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-bottom: 5px solid rgb(228, 130, 11);
-}
-
-
-@media screen and (max-width: 899px) {
-  .dropdown{
-    width: 100%;
-  }
-  .dropdown-content a:hover {
-    background-color: transparent
-  }
-
-  .dropdown-content{
-    width: 100%;
-    position: relative;
-    display: block;
-    border-bottom: 0px solid rgb(228, 130, 11);
-  }
-  .nav__menu-list{
-    height: 80%;
-    overflow-y: scroll;
-  }
-
-  .dropbtn{
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-  }
-  .button{
-    width: 100%;
-  }
-  .nav__link{
-    width: 100%;
-    text-align: left;
-  }
-  
-}
-
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: orange;
-}
-
-.displayNone{
-  display: none;
-}
-
-.ddItem{
-  border-radius: 10px;
-}
-
-.dropdown::-webkit-scrollbar.dropdown {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track.dropdown {
-  background: #efb786; 
-}
- 
-/* Handle */
-.dropdown::-webkit-scrollbar-thumb {
-  background: #cc751f; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-.dropdown::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-
-
-
-.sidebar p:hover {
-  
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-  background-color: #f37b3e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px;
-  margin-top: 0px;
-  margin-left: 25px;
-  cursor: pointer; 
-  font-weight: bold; 
-}
-
- 
-
- *{
-  scroll-margin-top: 80px; /* whatever is a nice number that gets you past the header */
-}
-
-/* contentsBar */
-.contentsBar{
-  height: inherit;
-  width: 300px;
-  padding-left: 20px;
-  padding-top: 200px;
-  background-color:#FDC550;
-
-  /* box-shadow: 5px 1px 0px rgba(1,1,1,0.2); */
-}
-.contentsButton{
-
-  background: transparent;
-  border: 0;
-  font-size: 20px;
-  text-align: left;
-  padding-left: 20px;
-  margin-bottom: 20px;
-  width: 260px;
-}
-.contentsButton:hover{
-  background-color: #f37b3e;
-  color: white;
-  font-weight: bold;
-  padding: 6px;
-}
-.text{
-  z-index: -1;
-  max-width: 760px;
-  text-align: justify;
-  margin-right: 200px;
-  margin-left: 100px;
-}
-
-.text h1{
-  margin-top: 50px;
-  margin-bottom: 10px;
-  text-align: left;
-}
-.text h2,h3{
-  margin-top: 20px;
-  margin-bottom: 10px;
-
-}
-
-.text h5{
-  font-weight: lighter;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.attForm{
-  justify-content: center;
-  margin-left: 4%;
-  width: 92%;
-  border: 0;
-  height: 1800vh;
-}
-.ellipse{
-  z-index: -1;
-  background: linear-gradient(to right, #FDC550, #f37b3e);
-  width: 100%;
-  height: 30vh;
-
-}
-
-.indent{
-  position: relative;
-  left: 60px;
-  max-width: 700px;
-}
-
-.figure{
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
 
