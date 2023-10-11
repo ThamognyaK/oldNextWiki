@@ -4,31 +4,28 @@ function Footer() {
   return (
     <footer className="bg-what text-white p-6">
       <div className="flex flex-wrap justify-center space-x-6 mb-6">
-        {/* Sponsor images go here */}
         <img
           src="https://static.igem.wiki/teams/4629/wiki/chulalongkorn-university-official-logo-svg.png"
-          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          className="h-16 sm:h-32"
           alt="Sponsor"
         />
         <img
           src="https://static.igem.wiki/teams/4629/wiki/bangchak.png"
-          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          className="h-16 sm:h-32"
           alt="Sponsor"
         />
         <img
           src="https://static.igem.wiki/teams/4629/wiki/logo-mahachok-fruits-01.png"
-          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          className="h-16 sm:h-32"
           alt="Sponsor"
         />
         <img
           src="https://static.igem.wiki/teams/4629/wiki/ris.png"
-          className="h-16 sm:h-32" // Adjust the image height for small and larger screens
+          className="h-16 sm:h-32"
           alt="Sponsor"
         />
-        {/* Add more sponsor images as needed */}
       </div>
       <div className="text-center">
-        {/* Creative Commons license information */}
         <p className="mb-0 text-white text-sm sm:text-base">
           &copy; 2023 - Content on this site is licensed under a{" "}
           <a
