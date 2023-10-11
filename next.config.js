@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: { unoptimized: true },
     output: "export",
-  basePath: "/austin-utexas",
+  basePath: "/thailand-ris",
 
 }
 
