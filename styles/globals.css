@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "lgcb";
+  src: url("https://static.igem.wiki/teams/4629/wiki/louis-george-cafe-bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
 * {
   margin: 0;
@@ -53,11 +61,30 @@ p {
   position: relative;
   transition: all 0.2s;
   color: white;
-  z-index: 1;
+  z-index: 1000;
 }
 nav.nav {
-  z-index: 1;
+  z-index: 1000;
   height: 60px;
+}
+
+/* Style for the masthead */
+.masthead {
+  position: relative;
+  text-align: center;
+  background-color: #000; /* Set the background color for your masthead */
+  color: #fff; /* Set the text color for your masthead */
+  z-index: -1;
+}
+/* Center the content vertically and horizontally */
+.masthead video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Set a fixed height for the masthead or adjust as needed */
+.masthead {
+  height: 100vh; /* 100% of the viewport height */
 }
 
 /* dropdwon */
