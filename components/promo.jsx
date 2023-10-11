@@ -1,3 +1,4 @@
+// BackgroundVideo.js
 import React from "react";
 
 const BackgroundVideo = () => {
@@ -30,3 +31,5 @@ const BackgroundVideo = () => {
 };
 
 export default BackgroundVideo;
+
+// pls.js
