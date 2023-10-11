@@ -1,0 +1,25 @@
+/* Style the bottom bar */
+.bottom-bar {
+  background-color: #333; /* Background color for the bottom bar */
+  color: white; /* Text color */
+  padding: 20px 0; /* Adjust the padding as needed */
+  text-align: center;
+}
+
+/* Style the sponsor logos */
+.sponsor-logos img {
+  height: 40px; /* Set the height of the sponsor logos */
+  margin-right: 20px; /* Add spacing between logos */
+}
+
+/* Style the footer text */
+.footer-text p {
+  font-size: 14px; /* Set the font size for the text */
+  margin: 5px 0; /* Add spacing between paragraphs */
+}
+
+/* Style links within the footer text */
+.footer-text a {
+  color: #f0f0f0; /* Link color */
+  text-decoration: underline; /* Underline links */
+}
